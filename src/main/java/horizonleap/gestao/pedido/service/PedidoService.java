@@ -8,6 +8,7 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import horizonleap.gestao.pedido.gateway.PedidoEventGateway;
 import horizonleap.gestao.pedido.model.ItemModel;
 import horizonleap.gestao.pedido.model.PedidoModel;
 import horizonleap.gestao.pedido.model.DTO.RegistrarPedidoRequisicao;
@@ -23,7 +24,12 @@ public class PedidoService {
     @Autowired
     private ItemRepository itemRepository;
 
+    @Autowired
+    private PedidoEventGateway eventGateway;
+
     public PedidoModel gravarPedido(RegistrarPedidoRequisicao pedido) {
+        eventGateway.pedidoFeitoEvent(pedido);
+
         List<ItemModel> listaItens = new LinkedList<ItemModel>();
         pedido.getListaItens().forEach(
                 item -> listaItens.add(itemRepository.save(new ItemModel(item.getQuantidade(), item.getIdProduto()))));

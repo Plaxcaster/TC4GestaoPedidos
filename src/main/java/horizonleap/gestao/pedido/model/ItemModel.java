@@ -16,7 +16,7 @@ public class ItemModel {
 
     @Column
     @Id 
-    @GeneratedValue()
+    @GeneratedValue
     private UUID id;
 
     @Column
@@ -24,6 +24,8 @@ public class ItemModel {
 
     @Column
     private Integer idProduto;
+
+
 
     public ItemModel(Integer quantidade , Integer idProduto){
         this.quantidade = quantidade;
