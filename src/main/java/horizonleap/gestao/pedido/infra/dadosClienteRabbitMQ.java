@@ -18,7 +18,6 @@ public class dadosClienteRabbitMQ implements ClienteGateway {
     @Override
     public void consultarDadosCliente(Integer id) {
        bridge.send(properties.getConsultaDadosClienteChanel(), id);
-    
     }
 
 }
