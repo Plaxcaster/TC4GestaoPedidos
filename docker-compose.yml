@@ -4,12 +4,6 @@ networks:
   padrao:
     driver: bridge
 services:
-  gestao-pedidos:
-    build: /TC4GestaoPedidos/
-    ports: 
-      - 8080:80
-    networks:
-      - padrao
   rabbitmq:
     image: rabbitmq:3.7.8-management
     ports:
