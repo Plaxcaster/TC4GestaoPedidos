@@ -21,7 +21,7 @@ public class GeradorPedidos{
     private PedidoService service;
 
     private List<Integer> listaDeProdutos = Arrays.asList(1, 2, 3, 4);
-    private List<Integer> listaDeClientes = Arrays.asList(100, 200, 300, 400);
+    private List<Integer> listaDeClientes = Arrays.asList(1, 2, 3);
 
     @Scheduled(fixedRate = 1000) // uma execução por segundo
     public void inventarPedido() {

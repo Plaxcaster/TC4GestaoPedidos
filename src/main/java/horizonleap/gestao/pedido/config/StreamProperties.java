@@ -7,5 +7,6 @@ import lombok.Data;
 @Data
 @Component
 public class StreamProperties {
-    private String pedidoFeitoChanel = "pedidosSuplier-out-0";
+    private String pedidoFeitoChanel = "pedidosFeito-out-0";
+    private String consultaDadosClienteChanel = "consultaDadoCLiente-out-0";
 }
