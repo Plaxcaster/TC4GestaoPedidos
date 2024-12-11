@@ -23,7 +23,7 @@ public class GeradorPedidos{
     private List<Integer> listaDeProdutos = Arrays.asList(1, 2, 3, 4, 5);
     private List<Integer> listaDeClientes = Arrays.asList(1, 2, 3);
 
-    @Scheduled(fixedRate = 100) // uma execução a cada 10 segundos
+    @Scheduled(fixedRate = 10000) // uma execução a cada 10 segundos
     public void inventarPedido() {
         log.info("inicio da preparação");
         ItemRequisicao item1 = new ItemRequisicao(quantidadeAleatoria() , produtoAleatorio());
