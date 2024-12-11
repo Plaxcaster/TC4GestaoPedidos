@@ -25,7 +25,6 @@ public class GeradorPedidos{
 
     @Scheduled(fixedRate = 10000) // uma execução a cada 10 segundos
     public void inventarPedido() {
-        log.info("inicio da preparação");
         ItemRequisicao item1 = new ItemRequisicao(quantidadeAleatoria() , produtoAleatorio());
         ItemRequisicao item2 = new ItemRequisicao(quantidadeAleatoria() , produtoAleatorio());
         List<ItemRequisicao> listaItems = Arrays.asList(item1 , item2);

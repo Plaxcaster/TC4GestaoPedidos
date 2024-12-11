@@ -39,23 +39,17 @@ public class PedidoService {
 
         pedido.getListaItens().forEach(
                 item -> listaItens.add(itemRepository.save(new ItemModel(item.getQuantidade(), item.getIdProduto()))));
-        log.info("Antes de salvar o pedido");
         PedidoModel pedidoSalvo = repository.save(new PedidoModel(listaItens, pedido.getCliente()));
-
-        log.info("Antes de preparar pedido");
 
         PedidoProntoEnvio pedidoPronto = prepararPedido(pedidoSalvo);
 
-        log.info("Antes de enviar o evento");
         eventGateway.pedidoFeitoEvent(pedidoPronto);
         
-        log.info("antes de retornar o pedido");
         return pedidoSalvo;
     }
 
     private PedidoProntoEnvio prepararPedido(PedidoModel pedido){
 
-        log.info(pedido.getCliente().toString());
         DadosCliente cliente = clienteRepository.findById(pedido.getCliente()).orElseThrow();
 
         return PedidoProntoEnvio.builder()
