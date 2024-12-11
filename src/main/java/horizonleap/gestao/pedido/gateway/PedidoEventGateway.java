@@ -1,8 +1,8 @@
 package horizonleap.gestao.pedido.gateway;
 
-import horizonleap.gestao.pedido.model.DTO.RegistrarPedidoRequisicao;
+import horizonleap.gestao.pedido.api.model.PedidoProntoEnvio;
 
 public interface PedidoEventGateway {
 
-    void pedidoFeitoEvent(RegistrarPedidoRequisicao pedido);
+    void pedidoFeitoEvent(PedidoProntoEnvio pedido);
 }
