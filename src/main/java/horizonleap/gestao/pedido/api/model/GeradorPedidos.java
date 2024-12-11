@@ -29,7 +29,7 @@ public class GeradorPedidos{
         ItemRequisicao item2 = new ItemRequisicao(quantidadeAleatoria() , produtoAleatorio());
         List<ItemRequisicao> listaItems = Arrays.asList(item1 , item2);
         Integer clienteAleatorio = clienteAleatorio();
-        log.info("Pedido para cliente {} , item1 {} , item2 {} " , clienteAleatorio.toString(), item1.toString(), item2.toString());
+        log.info("Pedido para cliente {} , item1 {} , item2 {} " , clienteAleatorio.toString(), listaItems.get(0).toString(),  listaItems.get(1).toString());
         service.gravarPedido(new RegistrarPedidoRequisicao(listaItems,clienteAleatorio));
     }
 
@@ -42,6 +42,6 @@ public class GeradorPedidos{
     }
 
     private Integer quantidadeAleatoria(){
-        return new Random().nextInt(100);
+        return new Random().nextInt(5);
     }
 }
