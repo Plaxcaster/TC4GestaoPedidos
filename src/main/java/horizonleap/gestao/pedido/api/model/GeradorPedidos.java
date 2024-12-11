@@ -20,7 +20,7 @@ public class GeradorPedidos{
     @Autowired
     private PedidoService service;
 
-    private List<Integer> listaDeProdutos = Arrays.asList(1, 2, 3, 4);
+    private List<Integer> listaDeProdutos = Arrays.asList(1, 2, 3, 4, 5);
     private List<Integer> listaDeClientes = Arrays.asList(1, 2, 3);
 
     @Scheduled(fixedRate = 100) // uma execução a cada 10 segundos
