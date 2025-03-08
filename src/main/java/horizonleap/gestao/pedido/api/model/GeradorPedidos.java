@@ -4,12 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import horizonleap.gestao.pedido.model.DTO.ItemRequisicao;
-import horizonleap.gestao.pedido.model.DTO.RegistrarPedidoRequisicao;
+import horizonleap.gestao.pedido.model.dto.ItemRequisicao;
+import horizonleap.gestao.pedido.model.dto.RegistrarPedidoRequisicao;
 import horizonleap.gestao.pedido.service.PedidoService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,8 +16,12 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class GeradorPedidos{
 
-    @Autowired
-    private PedidoService service;
+    
+    private final PedidoService service;
+
+    public GeradorPedidos (PedidoService service){
+        this.service = service;
+    }
 
     private List<Integer> listaDeProdutos = Arrays.asList(1, 2, 3, 4, 5);
     private List<Integer> listaDeClientes = Arrays.asList(1, 2, 3);

@@ -1,4 +1,4 @@
-package horizonleap.gestao.pedido.model.DTO;
+package horizonleap.gestao.pedido.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

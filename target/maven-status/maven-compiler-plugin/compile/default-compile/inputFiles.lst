@@ -1,10 +1,20 @@
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\api\model\PedidosSuplier.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\controller\PedidoController.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\GestaoPedidoApplication.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\DTO\ItemRequisicao.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\DTO\RegistrarPedidoRequisicao.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\ItemModel.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\PedidoModel.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\repository\ItemRepository.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\repository\PedidoRepository.java
-C:\Users\Gustavo\PosGraduacao\TC4\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\service\PedidoService.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\api\model\DadosCliente.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\api\model\EnderecoUF.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\api\model\GeradorPedidos.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\api\model\PedidoProntoEnvio.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\config\StreamProperties.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\consumers\CadastroClienteEntry.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\controller\PedidoController.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\gateway\ClienteGateway.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\gateway\PedidoEventGateway.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\GestaoPedidoApplication.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\infra\DadosClienteRabbitMQ.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\infra\EventGatewayRabbitMQ.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\dto\ItemRequisicao.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\dto\RegistrarPedidoRequisicao.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\ItemModel.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\model\PedidoModel.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\repository\DadosClienteRepository.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\repository\ItemRepository.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\repository\PedidoRepository.java
+C:\Users\pedro\java projects\TC4GestaoPedidos\src\main\java\horizonleap\gestao\pedido\service\PedidoService.java

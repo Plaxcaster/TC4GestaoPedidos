@@ -1,4 +1,4 @@
-package horizonleap.gestao.pedido.Consumers;
+package horizonleap.gestao.pedido.consumers;
 
 import java.util.function.Consumer;
 

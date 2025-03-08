@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "plaxcaster",
+        "projectKey": "Plaxcaster_TC4GestaoPedidos"
+    }
+}
